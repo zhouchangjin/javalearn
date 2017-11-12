@@ -35,42 +35,36 @@ public class TableViewApplication extends Application{
 		primaryStage.setScene(scene);
 		primaryStage.show();
 		
-		ArrayList<Plan> plist=new ArrayList<>();
-		Plan p=new Plan();
-		p.setPlanItem("haha");
-		p.setPlanScore(2);
-		p.setTime(new Date());
-		p.setIsFinished(false);
-		plist.add(p);
-    	ObservableList<Plan> list=FXCollections.observableArrayList(plist);
-    	Pagination pagin=new Pagination();
-    	pagin.setPageFactory(new Callback<Integer, Node>() {
-			@Override
-			public Node call(Integer param) {
-				// TODO Auto-generated method stub
-				System.out.println(param+"================");
-				
-				return null;
-			}
-		});
-    	TableView<Plan> tabl=new TableView<Plan>(list);
-    	tabl.setMaxHeight(200);
-    	TableColumn pNameCol = new TableColumn("Plan Name");
+		Pagination pagin=new Pagination();
+    	
+		TableView<Plan> tabl=new TableView<Plan>();
+		TableColumn pNameCol = new TableColumn("Plan Name");
         TableColumn scoreCol = new TableColumn("plan Score");
         TableColumn dateCol = new TableColumn("Date");
         pNameCol.setCellValueFactory(new PropertyValueFactory<Plan,String>("planItem"));
         scoreCol.setCellValueFactory(new PropertyValueFactory<>("planScore"));
         dateCol.setCellValueFactory(new PropertyValueFactory<>("time"));
         tabl.getColumns().addAll(pNameCol,scoreCol,dateCol);
-		pane.getChildren().add(tabl);
-		pane.getChildren().add(pagin);
-		
-		for(int i=0;i<100;i++){
-			Plan p2=new Plan();
-			p2.setPlanItem("xxx");
-			p2.setPlanScore(i);
-			list.add(p2);
-		}
+        
+    	pagin.setPageFactory(new Callback<Integer, Node>() {
+			@Override
+			public Node call(Integer param) {
+				// TODO Auto-generated method stub
+				System.out.println(param+"================");
+				ArrayList<Plan> plist=new ArrayList<>();
+				Plan p=new Plan();
+				p.setPlanItem("haha");
+				p.setPlanScore(2);
+				p.setTime(new Date());
+				p.setIsFinished(false);
+				plist.add(p);
+		    	ObservableList<Plan> list=FXCollections.observableArrayList(plist);
+		    	tabl.setItems(list);
+				return tabl;
+			}
+		});
+    	pane.getChildren().add(pagin);
+    	
 		
 		//tabl.setItems(list);
 		
