@@ -5,8 +5,8 @@ public interface MyOwnCallback {
 	public void Test(String args);
 	
 	/**
-	 * Ê¹ÓÃº¯ÊıÊ½±à³ÌµÄ½Ó¿Ú±ØĞëÎªfunctional interface£¬Ò²¾ÍÊÇÖ»ÓĞÒ»¸ö·½·¨¡£
-	 * ²»ÄÜÓĞ¶à¸ö·½·¨
+	 * ä½¿ç”¨å‡½æ•°å¼ç¼–ç¨‹çš„æ¥å£å¿…é¡»ä¸ºfunctional interfaceï¼Œä¹Ÿå°±æ˜¯åªæœ‰ä¸€ä¸ªæ–¹æ³•ã€‚
+	 * ä¸èƒ½æœ‰å¤šä¸ªæ–¹æ³•
 	public void Test2(String args,int num);
 	**/
 }

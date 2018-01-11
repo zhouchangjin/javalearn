@@ -11,10 +11,10 @@ public class LamdaTest {
 		MyOwnCallback a=(String test)->System.out.println(test);
 		a.Test("f");
 		
-		//函数式编程（即回调函数的简写）
-		TestCallback((String test)->System.out.println(test), "你好");
+		//鍑芥暟寮忕紪绋嬶紙鍗冲洖璋冨嚱鏁扮殑绠�鍐欙級
+		TestCallback((String test)->System.out.println(test), "浣犲ソ");
 		
-		//流式编程
+		//娴佸紡缂栫▼
 		List<Integer> arrayList=new ArrayList<Integer>();
 		for(int i=0;i<100;i++){
 			arrayList.add(i);

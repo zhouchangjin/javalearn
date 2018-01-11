@@ -7,7 +7,7 @@ import java.lang.annotation.RetentionPolicy;
 /**
  * When Retention is set to RUNTIME, the java reflection mechanism could correctly
  * get the annotation class from any annotated elements.
- * Èç¹ûÈ¥µôRetentionÕâÒ»ĞĞ£¬ÓÃ·´Éä¾ÍµÃ²»µ½¸Ã×¢½â¡£
+ * å¦‚æœå»æ‰Retentionè¿™ä¸€è¡Œï¼Œç”¨åå°„å°±å¾—ä¸åˆ°è¯¥æ³¨è§£ã€‚
  */
 public @interface LearnTest {
 
