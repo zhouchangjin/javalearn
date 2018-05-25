@@ -1,12 +1,8 @@
 package javalearn.javafx;
 
 import javafx.application.Application;
-import javafx.event.Event;
-import javafx.event.EventHandler;
-import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
@@ -27,14 +23,14 @@ public class FXMLApplication extends Application{
 	       primaryStage.setScene(myScene);
 	       primaryStage.show();
 //	       toDay.setOnMouseClicked(event->{
-//	    	   System.out.println("µã»÷ÁË½ñÌì");
+//	    	   System.out.println("ï¿½ï¿½ï¿½ï¿½Ë½ï¿½ï¿½ï¿½");
 //	       });
 //	       toDay.setOnMouseClicked(new EventHandler<Event>() {
 //
 //			@Override
 //			public void handle(Event arg0) {
 //				// TODO Auto-generated method stub
-//				System.out.println("µã»÷ÕâÀï");
+//				System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 //			}
 //		});
 	}

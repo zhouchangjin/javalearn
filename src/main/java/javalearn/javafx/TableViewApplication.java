@@ -3,11 +3,8 @@ package javalearn.javafx;
 import java.util.ArrayList;
 import java.util.Date;
 
-import com.sun.javafx.collections.ObservableListWrapper;
-
 import javafx.application.Application;
 import javafx.collections.FXCollections;
-import javafx.collections.ModifiableObservableListBase;
 import javafx.collections.ObservableList;
 import javafx.scene.Node;
 import javafx.scene.Scene;
