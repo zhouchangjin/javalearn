@@ -8,7 +8,7 @@ public class TestClone {
 		car.setId("1");
 		car.setType("mar");
 		Car car2=car.clone();
-		System.out.println(car.getType());
+		System.out.println(car2.getType());
 	}
 
 }
